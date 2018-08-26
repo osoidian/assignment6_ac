@@ -1,11 +1,11 @@
 //Create a variable with an array of city abbreviations.
 var cities = ['NYC', 'SF', 'LA', 'ATX', 'SYD']                                        
 
-// When the drop down box is clicked,
+// When the page loads,
 // loop through the array,
-// populate the list with the with the abbreviations and
+// populate the list with the abbreviations and
 // clear the array so not to display multiple copies of the abbreviations.
-$('#city-type').click(function(){
+$('#city-type').ready(function(){
   cities.forEach(function(cityName){
     $('#city-type').append("<option>" + cityName + "</option>")
   })
